@@ -1,0 +1,157 @@
+<!-- Referrence https://www.youtube.com/watch?v=Wm6CUkswsNw https://www.youtube.com/watch?v=U-JhRjRaD4A, https://www.w3schools.com/
+ colour picker  https://www.w3schools.com/colors/colors_picker.asp
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1"/>
+	<meta name="Admin" content="Team Code It"/>
+	<meta name="Contribution" content="Mayank,giridhar,roshni - Server side & Deepanshu,Sanyam - Clint side & Other team Members - raj, Rahul"/>
+	<title>Placements</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<style>
+	
+	
+	</style>
+	
+	</head>
+<body>
+
+	<div class="img_1">
+	<img src="./logo.png" style="height:80px;">
+	</div>
+	<hr/>
+	<div id="section_1">
+	<p  class="heading_1" >Placements Records</p>
+<!--	<p class="heading_2">Your Search ends here :</p> -->
+	
+		<div id="selector" >
+		<form>
+		<label class="label_style" for="lab1" >Programme :</label>
+			<select class="sel" class="lab1" name="branch">
+				<option>ME</option>
+				<option>CE</option>
+				<option>CSE</option>
+				<option>CHE</option>
+				<option>ECE</option>
+				<option>EE</option>
+				<option>BT</option>
+				<option>BME</option>
+			</select>
+		
+		<label class="label_style" for="lab2">Batch Year</label>
+			<select class="sel" class="lab2" name="year">
+				<option>2017</option>
+				<option>2016</option>
+				<option>2015</option>
+				<option>2014</option>
+				<option>2013</option>
+				<option>2012</option>
+				<option>2011</option>
+				<option>2010</option>
+				<option>2009</option>
+				<option>2008</option>
+				<option>2007</option>
+				<option>2006</option>
+			</select>
+			<button type="button" onlcick="abc()" class="button_1">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div id="middle">
+		<div id="section_2"  >
+			<h2 class="heading_3">About Trainning And Placement Cell</h2>
+			<p class="about" >The Training & Placement Cell is a separate Unit which deals with Placement and Campus
+			interviews of our students. The cell is being headed by regular Training & Placement Officer. The Training and Placement Cell acting as interface between 
+			University and Companies, has maintained symbiotic, vibrant and purposeful relationship with industries
+			across the country. As a result, it has built up an impressive placement record both in terms of percentage of students placed as well as number on companies 
+			visiting the campus in attractive salary packages. The department hosts companies on campus and ensures that every aspirant is assured of a bright career of his/ her choice.
+			<br/><br/><span class="media_query">
+			A spacious Training Placement Cell, equipped with the state-of-Art facilities Seminar Hall of 200 seating capacity for PPTs, 
+			40 seating capacity Air conditioned Lounge, Board Rooms, Smart class Room, Internet Lab, Air conditioned Committee Room for group 
+			discussion and Examination Halls have been made available by the University for conducting the Campus Interviews for final year students 
+			and training programmes for the pre-final year students towards preparing them for campus recruitment programmes. University has Computer 
+			Lab for online test accumulate 130 students in single shift. The Training & Placement Cell has been fostering a very productive and mutually 
+			beneficial relationship with the industries toward generating the placement opportunities for our students. Our students have the capacity to
+			think beyond the boundaries of contemporary text books as they are nurtured in a quality research environment. For these reasons several corporate 
+			have placed us among the top echelon of Institutes for the purpose of campus recruitment programmes.</span>
+			</p>
+			
+		</div>
+		<div id="section_3" >
+			<h2 class="heading_4">Major Recruiters</h2>
+			<ul class="list">
+			<li>Tata Consultancy Services</li>
+			<hr/>
+			<li>Fideality International</li>
+			<hr/>
+			<li>Code.It Co. Ltd.</li>
+			<hr/>
+			<li>Campus Squares</li>
+			</ul>
+		</div>
+	</div>
+	</br>
+	<footer>
+	<div id="footer">
+		<div class="footer_left">
+		<h1 class="heading_5">DCRUST <span style="color:#4d4dff">Murthal</span></h1>
+		<p class="text_1">DCRUST, Murthal came into being on 6th November 2006 
+		by upgrading erstwhile CRSCE, Murthal through an Act 29 of 2006 of the Legislature 
+		of the state of Haryana with the vision to facilitate and promote studies and research in emerging areas of higher education. </p>
+		</div>
+		<div class="footer_middle">
+		<h3 class="heading_6">Contact Us</h3>
+		<p class="text_2">DCRUST, Murthal, Sonepat 131039<br/>
+		0130-248 4173</br>info@dcrustm.org</p>
+		</div>
+		<div class="footer_right">
+		<h3 class="heading_6">About Code It</h3>
+		<p class="text_3">Coding team of university, serving university with their skills</br><span style="color:#4d4dff;font-weight:bold;"> CodeIt2018@gmail.com</span></p>
+		</div>
+	</div>
+	<div class="text_4">HandCoded By Team Code-It <br/> Copyright &copy; 2018 DCRUST,Murthal and Team Code It</div>
+	</footer>
+	
+	<script>	
+	window.onscroll = function() {myFunction()};
+
+var section_1 = document.getElementById("section_1");
+
+var sticky = section_1.offsetTop;
+var x = window.matchMedia("(min-width: 520px)")
+function myFunction() {
+  if (window.pageYOffset >= sticky && x.matches) {
+    section_1.classList.add("sticky");
+	document.getElementsByClassName("heading_1")[0].style.fontSize="25px";
+	document.getElementsByClassName("heading_1")[0].style.textAlign="left";
+	document.getElementsByClassName("sel")[0].style.height="30px";
+		document.getElementsByClassName("sel")[1].style.height="30px";
+		document.getElementsByClassName("button_1")[0].style.height="30px";
+
+  } else if(x.matches) {
+    section_1.classList.remove("sticky");
+	document.getElementsByClassName("heading_1")[0].style.fontSize="40px";
+	document.getElementsByClassName("heading_1")[0].style.textAlign="center";
+	document.getElementsByClassName("sel")[0].style.height="40px";
+		document.getElementsByClassName("sel")[1].style.height="40px";
+		document.getElementsByClassName("button_1")[0].style.height="40px";
+  }
+  else {
+    section_1.classList.remove("sticky");
+	document.getElementsByClassName("heading_1")[0].style.fontSize="20px";
+	document.getElementsByClassName("heading_1")[0].style.textAlign="center";
+	document.getElementsByClassName("sel")[0].style.height="25px";
+		document.getElementsByClassName("sel")[1].style.height="25px";
+		document.getElementsByClassName("button_1")[0].style.height="30px";
+  }
+  
+}
+	</script>	
+	</body>
+</html>
